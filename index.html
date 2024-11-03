@@ -6,44 +6,53 @@
         <title>Golden</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
         <link rel="stylesheet" href="vendor/bootstrap-grid.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Merriweather&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav class="navigation">
+        <nav class="navigation" id="Nav-bar">
             <div class="container">
-                <a class="nav-brand" href="#">Golden</a>
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="#">Services</a>
-                <a class="nav-link" href="#">Portfolio</a>
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Contact</a>
+                <div class="row row-nav">
+                    <a class="nav-brand" href="#">Golden</a>
+                    <ul class="links">
+                        <li><a class="nav-link" href="#">Home</a></li>
+                        <li><a class="nav-link" href="#">Services</a></li>
+                        <li><a class="nav-link" href="#">Portfolio</a></li>
+                        <li><a class="nav-link" href="#">About</a></li>
+                        <li><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <header class="splash">
             <div class="splash-inner">
                 <h2 class="page-subtitle">Welcome To Our Studio!</h2>
                 <h1 class="page-title">It's nice to meet you</h1>
+                <button class="button" type="button">Tell me more</button>
             </div>
         </header>
         <section class="services">
             <div class="container">
                 <h3 class="header">SERVICES</h3>
-                <p class="subtext">Ut enim ad minim veniam.</p>
-                <div class="row">
-                    <div class="col-4 grid">
+                <p class="subtext subtext-main">Ut enim ad minim veniam.</p>
+                <div class="row sevices-row">
+                    <div class="col-9 col-sm-7 col-lg-4 grid">
                         <i class="fa-solid fa-shop"></i>
                         <h4 class="category">E-Commerce</h4>
                         <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit.</p>
                     </div>
-                    <div class="col-4 grid">
-                        <i class="fa-solid fa-laptop-file"></i>
+                    <div class="col-9 col-sm-7 col-lg-4 grid">
+                        <i class="fa-solid fa-laptop"></i>
                         <h4 class="category">E-Commerce</h4>
                         <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit.</p>
                     </div>
-                    <div class="col-4 grid">
+                    <div class="col-9 col-sm-7 col-lg-4 grid">
                         <i class="fa-solid fa-lock"></i>
                         <h4 class="category">E-Commerce</h4>
-                        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit.</p>
+                        <p class="service-text">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit.</p>
                     </div>
                 </div>
             </div>
@@ -51,49 +60,75 @@
         <section class="portfolio">
             <div class="container">
                 <h3 class="header">OUR PORTFOLIO</h3>
-                <p class="subtext">Ut enim ad minim veniam.</p>
+                <p class="subtext subtext-main">Ut enim ad minim veniam.</p>
                 <div class="row">
-                    <div class="col-4">
-                        <img class="image-row" src="https://i.postimg.cc/3xqxCCjb/pexels-romanp-17845.jpg" alt="image">
-                        <h4 class="category">Ebony & Ivory</h4>
-                        <p class="subtext">Branding</p>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 portfolio-bg grid">
+                        <div class="card">
+                            <img src="https://i.postimg.cc/3xqxCCjb/pexels-romanp-17845.jpg" class="image-row" alt="image">
+                            <div class="card-text">
+                                <h4 class="category">Ebony and Ivory</h4>
+                                <p class="subtext">Branding</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <img class="image-row" src="https://i.postimg.cc/L5vHqz6D/pexels-olia-danilevich-5088017-1.jpg" alt="image">
-                        <h4 class="category">Smart Stationary</h4>
-                        <p class="subtext">Print Design</p>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 portfolio-bg grid">
+                        <div class="card">
+                            <img class="image-row" src="https://i.postimg.cc/L5vHqz6D/pexels-olia-danilevich-5088017-1.jpg" alt="image">
+                            <div class="card-text">
+                                <h4 class="category">Smart Stationary</h4>
+                                <p class="subtext">Print Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <img class="image-row" src="https://i.postimg.cc/ZnJbKfZ0/pexels-thought-catalog-317580-2228549.jpg" alt="image">
-                        <h4 class="category">Clever poster</h4>
-                        <p class="subtext">Print Design</p>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 portfolio-bg grid">
+                        <div class="card">
+                            <img class="image-row" src="https://i.postimg.cc/ZnJbKfZ0/pexels-thought-catalog-317580-2228549.jpg" alt="image">
+                            <div class="card-text">
+                                <h4 class="category">Clever poster</h4>
+                                <p class="subtext">Print Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <img class="image-row" src="https://i.postimg.cc/TwM2Bd4V/pexels-brettjordan-2746823.jpg" alt="image">
-                        <h4 class="category">Vinyl Record</h4>
-                        <p class="subtext">Product Mock-Pp</p>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 portfolio-bg grid">
+                        <div class="card">
+                            <img class="image-row" src="https://i.postimg.cc/TwM2Bd4V/pexels-brettjordan-2746823.jpg" alt="image">
+                            <div class="card-text">
+                                <h4 class="category">Vinyl Record</h4>
+                                <p class="subtext">Product Mock-Up</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <img class="image-row" src="https://i.postimg.cc/8CrPyJtk/pexels-jakubzerdzicki-17483093.jpg" alt="image">
-                        <h4 class="category">Treehouse Template</h4>
-                        <p class="subtext">Web Design</p>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 portfolio-bg grid">
+                        <div class="card">
+                            <img class="image-row" src="https://i.postimg.cc/8CrPyJtk/pexels-jakubzerdzicki-17483093.jpg" alt="image">
+                            <div class="card-text">
+                                <h4 class="category">Treehouse Template</h4>
+                                <p class="subtext">Web Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <img class="image-row" src="https://i.postimg.cc/hjL4BkkH/pexels-cottonbro-4503735.jpg" alt="image">
-                        <h4 class="category">Burned Logo</h4>
-                        <p class="subtext">Branding</p>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 portfolio-bg grid">
+                        <div class="card">
+                            <img class="image-row" src="https://i.postimg.cc/hjL4BkkH/pexels-cottonbro-4503735.jpg" alt="image">
+                            <div class="card-text">
+                                <h4 class="category">Burned Logo</h4>
+                                <p class="subtext">Branding</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="container">
+        <div class="container container-footer">
                 <div class="footer">
                     <div class="row">
-                        <p>Copyright 2014 FreebiesXpress.com</p>
-                        <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i>Youtube</a>
-                        <a href="#"><i class="fa-brands dark fa-twitter"></i>Twitter</a>
+                        <p>©Copyright 2014 FreebiesXpress.com</p>
+                        <ul class="links-media">
+                            <li><a class="social-media" href="#"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                            <li><a class="social-media" href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a></li>
+                            <li><a class="social-media" href="#"><i class="fa-brands fa-pinterest-p"></i>Pinterest</a></li>
+                            <li><a class="social-media" href="#"><i class="fa-brands fa-google"></i>Google Plus</a></li>
+                        </ul>
                     </div>
                 </div>
         </div>
